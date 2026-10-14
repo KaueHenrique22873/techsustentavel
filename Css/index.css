@@ -1,0 +1,87 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    color: #1b5e20;
+}
+
+/* Título */
+.Titulo {
+    max-width: 850px;
+    margin-bottom: 20px;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+    color: #1b5e20;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* Botões */
+button {
+    width: 220px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #43a047, #1b5e20);
+    box-shadow: 0 6px 15px rgba(27, 94, 32, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+/* Links dentro dos botões */
+button a {
+    display: block;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #66bb6a, #2e7d32);
+    box-shadow: 0 10px 22px rgba(27, 94, 32, 0.4);
+}
+
+/* Efeito ao clicar */
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(27, 94, 32, 0.3);
+}
+
+/* Acessibilidade ao navegar pelo teclado */
+button:focus-visible {
+    outline: 3px solid #81d4a3;
+    outline-offset: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .Titulo {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 100%;
+        max-width: 220px;
+    }
+}
