@@ -1,44 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Projetos TECHSustentável</title>
 </head>
 <body>
     <header>
-        <h1>Projetos TECHSustentável</h1>
+        <!-- Mantido a classe .Titulo que está no seu CSS -->
+        <h1 class="Titulo">Projetos Techsustentável</h1>
+        
+        <!-- Adicionado a classe .Introducao para aproveitar o estilo do seu CSS -->
+        <p class="Introducao">
+            Conheça as nossas iniciativas focadas em sustentabilidade digital, eficiência energética 
+            e economia circular para criar um ecossistema tecnológico mais verde e consciente.
+        </p>
     </header>
 
-    <main>
+    <!-- Mantido a classe .container que centraliza o conteúdo -->
+    <main class="container">
 
+        <!-- Envolvendo os projetos na div .cards para ativar o Grid do seu CSS -->
+        <div class="cards">
 
-        <div class="projeto-1">
-            <h2 class="tituloProjeto">Green TI - E-commerce Verde e Minimalista</h2>
-            <p>Desenvolvimento de uma plataforma de e-commerce simples,
-                rápida e ecológica para a [Nome da Startup].
-                O projeto adota os princípios de Web Design Sustentável e TI Verde,
-                garantindo uma experiência de compra ultra-rápida,
-                baixo custo de manutenção e impacto ambiental reduzido (baixa pegada de carbono por página carregada)
-            </p>
-            <img src="tech.jpg" alt="">
-        </div>
+            <!-- Projeto 1 modificado para .card1 -->
+            <div class="card1">
+                <div class="imagens">
+                    <img src="tech.jpg" alt="Green TI e TI Verde">
+                </div>
+                <h2 class="titulo-card">Green TI - E-commerce Verde e Minimalista</h2>
+                <p class="texto-card">
+                    Desenvolvimento de uma plataforma de e-commerce simples, rápida e ecológica para a  Startup.
+                    O projeto adota os princípios de Web Design Sustentável e TI Verde, garantindo uma experiência de compra ultra-rápida,
+                    baixo custo de manutenção e impacto ambiental reduzido (baixa pegada de carbono por página carregada).
+                </p>
+            </div>
 
-        <div class="projeto-2">
-            <h2 class="tituloProjeto">Algoritmos de Rotas Eco-eficientes</h2>
-            <p>
-                Desenvolver uma plataforma de e-commerce minimalista e inteligente para a [Nome da Startup], projetada sob a filosofia de sustentabilidade digital e física.
-                O foco é criar um modelo de negócio escalável com baixíssimo custo operacional e impacto ambiental reduzido, desde o primeiro clique do cliente até a entrega do produto em sua porta.
-            </p>
-            <img src="maps.jpg" alt="">
-        </div>
-        <div class="projeto-3">
-            <h2 class="tituloProjeto">Plataforma de Refurbished (Recondicionamento)</h2>
-            <p>Desenvolver uma plataforma de e-commerce e captação especializada na venda e recondicionamento de eletrônicos, baseada no conceito de Economia Circular.
-                O projeto visa democratizar o acesso à tecnologia de ponta, oferecendo dispositivos revisados com garantia e preços acessíveis, ao mesmo tempo em que reduz o descarte de lixo eletrônico (e-waste).
-            </p>
-            <img src="images.jpg" alt="">
-        </div>
+            <!-- Projeto 2 modificado para .card2 -->
+            <div class="card2">
+                <div class="imagens">
+                    <img src="maps.jpg" alt="Algoritmos de Rotas Eco-eficientes">
+                </div>
+                <h2 class="titulo-card">Algoritmos de Rotas Eco-eficientes</h2>
+                <p class="texto-card">
+                    Desenvolver uma plataforma de e-commerce minimalista e inteligente para a Startup, projetada sob a filosofia de sustentabilidade digital e física.
+                    O foco é criar um modelo de negócio escalável com baixíssimo custo operacional e impacto ambiental reduzido, desde o primeiro clique do cliente até a entrega do produto em sua porta.
+                </p>
+            </div>
+
+            <!-- Projeto 3 modificado para .card3 -->
+            <div class="card3">
+                <div class="imagens">
+                    <img src="images.jpg" alt="Plataforma de Recondicionamento">
+                </div>
+                <h2 class="titulo-card">Plataforma de Refurbished (Recondicionamento)</h2>
+                <p class="texto-card">
+                    Desenvolver uma plataforma de e-commerce e captação especializada na venda e recondicionamento de eletrônicos, baseada no conceito de Economia Circular.
+                    O projeto visa democratizar o acesso à tecnologia de ponta, oferecendo dispositivos revisados com garantia e preços acessíveis, ao mesmo tempo em que reduz o descarte de lixo eletrônico (e-waste).
+                </p>
+            </div>
+
+        </div> <!-- Fim da div .cards -->
 
     </main>
 </body>
