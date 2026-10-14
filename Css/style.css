@@ -1,0 +1,184 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9, #f4fbf5);
+    color: #263238;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Título principal */
+.Titulo {
+    text-align: center;
+    color: #1b5e20;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+/* Texto de introdução */
+.Introducao {
+    max-width: 950px;
+    margin: 0 auto 45px;
+    text-align: center;
+    color: #455a64;
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 1.7;
+}
+
+/* Área dos cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* Estilo geral dos cards */
+.card1,
+.card2,
+.card3 {
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #43a047;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 28px rgba(46, 125, 50, 0.25);
+}
+
+/* Área das imagens */
+.imagens {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.imagens img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.card1:hover img,
+.card2:hover img,
+.card3:hover img {
+    transform: scale(1.08);
+}
+
+/* Título dos cards */
+.titulo-card {
+    color: #2e7d32;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    padding: 22px 22px 10px;
+}
+
+/* Texto dos cards */
+.texto-card {
+    color: #546e7a;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 22px 25px;
+}
+
+/* Botão de navegação */
+button {
+    display: block;
+    margin: 0 auto 35px;
+    padding: 12px 30px;
+    background-color: #2e7d32;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 5px 12px rgba(46, 125, 50, 0.25);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Link dentro do botão */
+button a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: #1b5e20;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(46, 125, 50, 0.35);
+}
+
+/* Efeito ao clicar */
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(46, 125, 50, 0.25);
+}
+
+
+/* Responsividade para tablets */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card3 {
+        grid-column: span 2;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    .Titulo {
+        font-size: 2rem;
+    }
+
+    .Introducao {
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .card3 {
+        grid-column: auto;
+        max-width: 100%;
+    }
+
+    .imagens {
+        height: 200px;
+    }
+}
